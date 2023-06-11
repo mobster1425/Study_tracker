@@ -1,0 +1,42 @@
+{
+  "name": "study_tracker",
+  "version": "1.0.0",
+  "description": "an application to track your study time",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install",
+    "install-frontend": "cd frontend && npm install",
+    "build-frontend": "cd frontend && npm run build",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm  run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "feyin",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.1.5",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "validator": "^13.9.0",
+    "xss-clean": "^0.1.1"
+  }
+}

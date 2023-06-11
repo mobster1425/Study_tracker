@@ -77,7 +77,9 @@ app.use(cookieParser());
 app.use('/api/v1/auth',userRoute);
 app.use('/api/v1/study',authenticateUser,studyRoute);
 
-
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
 
 
 

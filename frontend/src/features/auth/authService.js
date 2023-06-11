@@ -1,5 +1,5 @@
-const API_URI="http://localhost:5000/api/v1/auth/";
-
+const API_URI="https://study-tracker-backend.onrender.com/api/v1/auth/";
+//http://localhost:5000
 
 //login
 const login=async(userData)=>{

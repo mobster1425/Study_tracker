@@ -4,8 +4,8 @@
 
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/v1/study";
-
+const API_URL = "https://study-tracker-backend.onrender.com/api/v1/study";
+//http://localhost:5000
 // Create sleep entry
 const createStudyEntry = async (studyData,token) => {
  /*

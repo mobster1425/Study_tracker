@@ -8,8 +8,10 @@ const app=express();
 //import dotenv from 'dotenv';
 //dotenv.config();
 //app.use(cors());
-
-app.use(cors());
+const corsOptions= {
+  origin: "https://study-tracker.onrender.com" //frontend url
+}
+app.use(cors(corsOptions));
 
 /*
 app.use(cors({
